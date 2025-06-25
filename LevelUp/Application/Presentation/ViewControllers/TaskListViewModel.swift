@@ -7,11 +7,12 @@
 
 
 import Foundation
+import CoreData
 import Combine
 
 class TaskListViewModel {
     @Published private(set) var tasks: [TaskEntity] = []
-    private var cancellables = Set<AnyCancellable>()
+    private let context = PersistenceController.shared.container.viewContext
     //private let getTasksUseCase = GetTasksUseCase()
 
     init() {
@@ -19,18 +20,17 @@ class TaskListViewModel {
     }
 
     func fetchTasks() {
-//        getTasksUseCase.execute()
-//            .receive(on: DispatchQueue.main)
-//            .sink(receiveCompletion: { completion in
-//                switch completion {
-//                case .failure(let error):
-//                    print("Error obteniendo tareas: \(error)")
-//                case .finished:
-//                    break
-//                }
-//            }, receiveValue: { [weak self] tasks in
-//                self?.tasks = tasks
-//            })
-//            .store(in: &cancellables)
+        let req : NSFetchRequest<TaskEntity> = TaskEntity.fetchRequest()
+        req.sortDescriptors = [NSSortDescriptor(key: "createdAt", ascending: false)]
+        //Prefetch para enlazar con listas
+        req.relationshipKeyPathsForPrefetching = ["key"]
+        
+        do {
+            tasks = try context.fetch(req)
+        } catch {
+            print("Error while fetching tasks:", error)
+            tasks = []
+        }
+        
     }
 }
