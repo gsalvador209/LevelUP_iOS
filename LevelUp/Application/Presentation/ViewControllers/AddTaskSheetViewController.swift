@@ -137,6 +137,9 @@ class AddTaskSheetViewController: UIViewController {
                 deadline: selectedDate,
                 reminders: nil
               )
+                NotificationCenter.default.post(name: .taskAdded, object: nil)
+                print("Se ha guardado la tarea \(title)")
+                
             } catch {
               print("Error guardando tarea: \(error)")
             }

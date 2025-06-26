@@ -9,9 +9,11 @@
 import UIKit
 import Combine
 
+
 class TaskListViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
+    
     
     private let viewModel = TaskListViewModel()
     private var cancellables = Set<AnyCancellable>()
@@ -25,7 +27,7 @@ class TaskListViewController: UIViewController {
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UINib(nibName: "TaskCell", bundle: nil), forCellReuseIdentifier: "TaskCell")
+        tableView.register(TaskCell.self, forCellReuseIdentifier: TaskCell.reuseIdentifier)
     }
     
     private func bindViewModel() {
@@ -44,11 +46,13 @@ extension TaskListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let taskEntity = viewModel.tasks[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
-        cell.configure(with: taskEntity) { taskId in
-            //UseCase de toggleCompletion
+        let task = viewModel.tasks[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: TaskCell.reuseIdentifier, for: indexPath) as! TaskCell
+        
+        cell.configure(with: task) { taskId in
+            self.viewModel.toggleCompletion(taskID: taskId)
         }
+        
         return cell
     }
 }
