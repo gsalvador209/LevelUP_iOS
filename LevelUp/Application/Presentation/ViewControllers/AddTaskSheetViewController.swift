@@ -4,8 +4,6 @@
 //
 //  Created by Salvador Chavez on 25/06/25.
 //
-
-
 import UIKit
 
 class AddTaskSheetViewController: UIViewController {
@@ -15,7 +13,9 @@ class AddTaskSheetViewController: UIViewController {
     @IBOutlet weak var toggleDescriptionButton: UIButton!
     @IBOutlet weak var scheduleButton: UIButton!
     @IBOutlet weak var recurrenceButton: UIButton!
-    @IBOutlet weak var listSelectorField: UITextField!  // usaremos UIPickerView como inputView
+    @IBOutlet weak var listSelectorField: UITextField!
+    @IBOutlet weak var descriptionHeightConstraint: NSLayoutConstraint! //Para variar la altura
+    
     @IBOutlet weak var saveButton: UIButton!
 
     // MARK: - Estado interno
@@ -23,7 +23,7 @@ class AddTaskSheetViewController: UIViewController {
     private var selectedDate: Date?
     private var selectedListId: Int64?
 
-    // Un simple array para ejemplos; en tu caso carga desde tu ViewModel
+    //Array de listas para el picker
     private var lists: [(id: Int64, name: String)] = [(1, "Inbox"), (2, "Work"), (3, "Personal")]
 
     // PICKER para la lista
@@ -33,13 +33,24 @@ class AddTaskSheetViewController: UIViewController {
         p.dataSource = self
         return p
     }()
+    
+    //Placeholder para un hint en el UITextVIew
+    private let placeholderLabel: UILabel = {
+            let lbl = UILabel()
+            lbl.text = "Escribe la descripción…"
+            lbl.font = .italicSystemFont(ofSize: 16)
+            lbl.textColor = .lightGray
+            lbl.translatesAutoresizingMaskIntoConstraints = false
+            return lbl
+        }()
 
     // MARK: - Ciclo de vida
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Ocultamos la descripción al inicio
-        descriptionTextView.isHidden = true
+        //descriptionTextView.isHidden = true
+        descriptionHeightConstraint.constant = 0
         saveButton.isEnabled = false
 
         // Delegados / targets
@@ -53,14 +64,14 @@ class AddTaskSheetViewController: UIViewController {
         listSelectorField.placeholder = "Select a list"
         // Seleccion por defecto
         selectList(at: 0)
-
-        // Observadores de teclado para mantener sheet arriba
-//        NotificationCenter.default.addObserver(self,
-//            selector: #selector(keyboardWillShow(notification:)),
-//            name: UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self,
-//            selector: #selector(keyboardWillHide(notification:)),
-//            name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        descriptionTextView.delegate = self
+        descriptionTextView.addSubview(placeholderLabel)
+            NSLayoutConstraint.activate([
+                placeholderLabel.topAnchor.constraint(equalTo: descriptionTextView.topAnchor, constant: 8),
+                placeholderLabel.leadingAnchor.constraint(equalTo: descriptionTextView.leadingAnchor, constant: 5),
+                placeholderLabel.trailingAnchor.constraint(equalTo: descriptionTextView.trailingAnchor, constant: -5)
+            ])
     }
 
     deinit {
@@ -76,9 +87,19 @@ class AddTaskSheetViewController: UIViewController {
     @objc private func toggleDescription() {
         descriptionVisible.toggle()
         descriptionTextView.isHidden = !descriptionVisible
-        if !descriptionVisible {
-            descriptionTextView.text = ""
+        descriptionHeightConstraint.constant = descriptionVisible ? 50 : 0
+        
+        if #available(iOS 16, *) {
+            sheetPresentationController?.animateChanges {
+                sheetPresentationController?.selectedDetentIdentifier = descriptionVisible
+                ? UISheetPresentationController.Detent.Identifier("medium")
+                : UISheetPresentationController.Detent.Identifier("small")
+            }
         }
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+          }
     }
 
     @objc private func presentDateTimePicker() {
@@ -139,5 +160,21 @@ extension AddTaskSheetViewController: UIPickerViewDelegate, UIPickerViewDataSour
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectList(at: row)
+    }
+}
+
+extension AddTaskSheetViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        // Oculta el placeholder si hay texto
+        placeholderLabel.isHidden = !textView.text.isEmpty
+    }
+
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        // si quieres mover el detent a grande cuando empiecen a escribir
+        if #available(iOS 16.0, *) {
+            sheetPresentationController?.animateChanges {
+                sheetPresentationController?.selectedDetentIdentifier = .large
+            }
+        }
     }
 }

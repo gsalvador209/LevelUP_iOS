@@ -61,10 +61,11 @@ class LevelUpTabBarController: UITabBarController {
                 sheet.prefersGrabberVisible = true
                 sheet.prefersScrollingExpandsWhenScrolledToEdge = false
                 if #available(iOS 16.0, *) {
-                    let custom = UISheetPresentationController.Detent.custom(
-                        identifier: .init("fixedHeight")) { _ in 150 }
-                    sheet.detents = [custom]
-                    sheet.selectedDetentIdentifier = custom.identifier
+                    let small = UISheetPresentationController.Detent.custom(
+                        identifier: .init("small")) { _ in 150 }
+                    let large = UISheetPresentationController.Detent.custom(identifier: .init("medium")) { _ in 200}
+                    sheet.detents = [small, large]
+                    sheet.selectedDetentIdentifier = small.identifier
                 } else {
                     sheet.detents = [.medium()]
                     sheet.selectedDetentIdentifier = .medium
