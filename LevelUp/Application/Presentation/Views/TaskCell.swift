@@ -9,6 +9,9 @@
 import UIKit
 
 class TaskCell: UITableViewCell {
+    static let reuseIdentifier = "TaskCell"
+    
+    
     // MARK: – Subviews
     private let completeSwitch: UISwitch = {
         let sw = UISwitch()

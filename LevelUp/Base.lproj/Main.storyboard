@@ -99,7 +99,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="checkmark.circle" catalog="system" id="Ll0-FG-5vW"/>
                     <connections>
-                        <outlet property="tableView" destination="vI1-no-FJG" id="wvn-dQ-RiJ"/>
+                        <outlet property="tableView" destination="vI1-no-FJG" id="hgR-Jn-Hcg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdC-7w-4hl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
