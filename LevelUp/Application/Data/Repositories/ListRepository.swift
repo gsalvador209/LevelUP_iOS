@@ -19,6 +19,16 @@ final class ListRepository {
 
     // MARK: – Read
 
+    // Recupera todas las listas, ordenadas por nombre (type)
+        func fetchAllLists() throws -> [ListEntity] {
+            let request: NSFetchRequest<ListEntity> = ListEntity.fetchRequest()
+            // Orden alfabético por la propiedad `type`
+            request.sortDescriptors = [
+                NSSortDescriptor(key: "type", ascending: true)
+            ]
+            return try context.fetch(request)
+        }
+    
     /// Recupera una lista por su systemName (clave única)
     func fetchList(bySystemName systemName: String) throws -> ListEntity? {
         let req: NSFetchRequest<ListEntity> = ListEntity.fetchRequest()

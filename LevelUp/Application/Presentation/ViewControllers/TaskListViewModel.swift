@@ -12,7 +12,7 @@ import Combine
 
 class TaskListViewModel {
     @Published private(set) var tasks: [TaskEntity] = []
-    private let context = PersistenceController.shared.container.viewContext
+    private let context = CoreDataStack.shared.container.viewContext
     //private let getTasksUseCase = GetTasksUseCase()
 
     init() {

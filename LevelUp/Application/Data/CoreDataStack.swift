@@ -12,16 +12,18 @@ final class CoreDataStack {
   static let shared = CoreDataStack()
   let container: NSPersistentContainer
 
-  private init() {
-    container = NSPersistentContainer(name: "LevelUpModel")
-    let desc = container.persistentStoreDescriptions.first
-    desc?.shouldMigrateStoreAutomatically = true
-    desc?.shouldInferMappingModelAutomatically = true
-    container.loadPersistentStores { storeDesc, error in
-      if let err = error {
-        fatalError("CoreData load error: \(err)")
-      }
-    }
+    private init(inMmeory: Bool = false) {
+      let modelName = "LevelUpDatabase"
+    container = NSPersistentContainer(name: modelName)
+
+        if inMmeory {
+            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+        }
+        
+        container.loadPersistentStores { desc, err in
+              if let e = err as NSError? { fatalError("CD load error: \(e)") }
+            }
+        
   }
 
   var context: NSManagedObjectContext { container.viewContext }

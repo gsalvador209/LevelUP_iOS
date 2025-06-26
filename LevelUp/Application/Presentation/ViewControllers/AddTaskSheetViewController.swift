@@ -18,13 +18,18 @@ class AddTaskSheetViewController: UIViewController {
     
     @IBOutlet weak var saveButton: UIButton!
 
+    // Repositorio
+    private let taskRepo = TaskRepository()
+    private let listRepo = ListRepository()
+    
+    //Listas
+    private var lists : [ListEntity] = []
+    private var selectedList : ListEntity?
+    
     // MARK: - Estado interno
     private var descriptionVisible = false
     private var selectedDate: Date?
-    private var selectedListId: Int64?
 
-    //Array de listas para el picker
-    private var lists: [(id: Int64, name: String)] = [(1, "Inbox"), (2, "Work"), (3, "Personal")]
 
     // PICKER para la lista
     private lazy var listPicker: UIPickerView = {
@@ -33,6 +38,8 @@ class AddTaskSheetViewController: UIViewController {
         p.dataSource = self
         return p
     }()
+    
+    
     
     //Placeholder para un hint en el UITextVIew
     private let placeholderLabel: UILabel = {
@@ -47,9 +54,14 @@ class AddTaskSheetViewController: UIViewController {
     // MARK: - Ciclo de vida
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Ocultamos la descripción al inicio
-        //descriptionTextView.isHidden = true
+        
+        //Listas
+        listSelectorField.inputView = listPicker
+        loadLists()
+    
+        
+        //Bottom Sheet
+        descriptionTextView.isHidden = true
         descriptionHeightConstraint.constant = 0
         saveButton.isEnabled = false
 
@@ -59,11 +71,6 @@ class AddTaskSheetViewController: UIViewController {
         scheduleButton.addTarget(self, action: #selector(presentDateTimePicker), for: .touchUpInside)
         saveButton.addTarget(self, action: #selector(saveTask), for: .touchUpInside)
 
-        // Configuramos picker para el selector de lista
-        listSelectorField.inputView = listPicker
-        listSelectorField.placeholder = "Select a list"
-        // Seleccion por defecto
-        selectList(at: 0)
         
         descriptionTextView.delegate = self
         descriptionTextView.addSubview(placeholderLabel)
@@ -113,18 +120,28 @@ class AddTaskSheetViewController: UIViewController {
         nav.modalPresentationStyle = .fullScreen
         present(nav, animated: true)
     }
-
     @objc private func saveTask() {
-        guard let title = titleTextField.text, !title.isEmpty,
-              let listId = selectedListId else { return }
-        let descText = descriptionVisible ? descriptionTextView.text : nil
+            guard let title = titleTextField.text, !title.isEmpty,
+                  let list = selectedList else {
+                // quizá muestra un alerta de “selecciona lista”
+                return
+            }
+            let descText = descriptionVisible ? descriptionTextView.text : nil
 
-        // Aquí llamas a tu ViewModel/Repository (inyección en AppCoordinator)
-        //TaskViewModel.shared.add(title: title, description: descText, listId: listId, deadline: selectedDate)
-
-        dismiss(animated: true)
-    }
-
+            do {
+              try taskRepo.addTask(
+                title: title,
+                description: descText,
+                list: list,
+                startDate: nil,
+                deadline: selectedDate,
+                reminders: nil
+              )
+            } catch {
+              print("Error guardando tarea: \(error)")
+            }
+            dismiss(animated: true)
+        }
     // MARK: - Keyboard Handling
 
 //    @objc private func keyboardWillShow(notification: Notification) {
@@ -140,28 +157,38 @@ class AddTaskSheetViewController: UIViewController {
 //    }
 
     // MARK: - Lista Picker Helpers
-
-    private func selectList(at index: Int) {
-        let item = lists[index]
-        selectedListId = item.id
-        listSelectorField.text = item.name
+    private func loadLists(){
+        do {
+            lists = try listRepo.fetchAllLists()
+            print("Se hallaron \(lists.count) listas")
+            listPicker.reloadAllComponents()
+            if let first = lists.first {
+                selectedList = first
+                listSelectorField.text = first.customName ?? first.type
+                listPicker.selectRow(0, inComponent: 0, animated: false)
+            }
+        } catch {
+            print("Error cargando listas: \(error)")
+        }
     }
+    
+    @objc private func dismissListPicker() {
+        listSelectorField.resignFirstResponder()
+    }
+    
+    
+//    
+//    private func selectList(at index: Int) {
+//        let list = lists[index]
+//        selectedList = list[index]
+//    }
+    
+    
+    
 }
 
 // MARK: - UIPickerViewDelegate & DataSource
 
-extension AddTaskSheetViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int { 1 }
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        lists.count
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        lists[row].name
-    }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectList(at: row)
-    }
-}
 
 extension AddTaskSheetViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
@@ -176,5 +203,24 @@ extension AddTaskSheetViewController: UITextViewDelegate {
                 sheetPresentationController?.selectedDetentIdentifier = .large
             }
         }
+    }
+}
+
+extension AddTaskSheetViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int { 1 }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent comp: Int) -> Int {
+        lists.count
+    }
+    func pickerView(_ pickerView: UIPickerView,
+                    titleForRow row: Int, forComponent comp: Int) -> String? {
+        let list = lists[row]
+        // mostramos el nombre custom o el type por defecto
+        return list.customName ?? list.type
+    }
+    func pickerView(_ pickerView: UIPickerView,
+                    didSelectRow row: Int, inComponent comp: Int) {
+        let list = lists[row]
+        selectedList = list
+        listSelectorField.text = list.customName ?? list.type
     }
 }
