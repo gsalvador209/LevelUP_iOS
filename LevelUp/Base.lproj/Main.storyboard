@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Level Up Tab Bar Controller-->
         <scene sceneID="VdP-sI-T0b">
             <objects>
-                <tabBarController id="j0U-f6-FmN" sceneMemberID="viewController">
+                <tabBarController id="j0U-f6-FmN" customClass="LevelUpTabBarController" customModule="LevelUp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="l6K-Hh-pH9"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z6U-zq-nDk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -58,6 +58,12 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vI1-no-FJG">
                                 <rect key="frame" x="16" y="118" width="361" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1Yb-cI-3Ie">
+                                    <rect key="frame" x="0.0" y="121.66666793823242" width="361" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskCell" id="drX-wg-KG9" customClass="TaskCell">
                                         <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
