@@ -1,3 +1,11 @@
+//
+//  AddTaskSheetViewController.swift
+//  LevelUp
+//
+//  Created by Salvador Chavez on 25/06/25.
+//
+
+
 import UIKit
 
 class AddTaskSheetViewController: UIViewController {
@@ -47,12 +55,12 @@ class AddTaskSheetViewController: UIViewController {
         selectList(at: 0)
 
         // Observadores de teclado para mantener sheet arriba
-        NotificationCenter.default.addObserver(self,
-            selector: #selector(keyboardWillShow(notification:)),
-            name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self,
-            selector: #selector(keyboardWillHide(notification:)),
-            name: UIResponder.keyboardWillHideNotification, object: nil)
+//        NotificationCenter.default.addObserver(self,
+//            selector: #selector(keyboardWillShow(notification:)),
+//            name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self,
+//            selector: #selector(keyboardWillHide(notification:)),
+//            name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     deinit {
@@ -74,29 +82,15 @@ class AddTaskSheetViewController: UIViewController {
     }
 
     @objc private func presentDateTimePicker() {
-        // Equivalente a tu DatePickerDialog + TimePickerDialog
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = .dateAndTime
-        if #available(iOS 13.4, *) {
-            datePicker.preferredDatePickerStyle = .wheels
+        let dtVC = DateTimePickerViewController()
+        dtVC.onComplete = { date in
+            self.selectedDate = date
+            self.scheduleButton.setImage(
+                UIImage(systemName: "calendar"), for: .normal)
         }
-
-        let alert = UIAlertController(title: "Select Date & Time", message: nil, preferredStyle: .actionSheet)
-        alert.view.addSubview(datePicker)
-        datePicker.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            datePicker.leadingAnchor.constraint(equalTo: alert.view.leadingAnchor),
-            datePicker.trailingAnchor.constraint(equalTo: alert.view.trailingAnchor),
-            datePicker.topAnchor.constraint(equalTo: alert.view.topAnchor, constant: 20),
-            datePicker.heightAnchor.constraint(equalToConstant: 200)
-        ])
-
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { _ in
-            self.selectedDate = datePicker.date
-            // Cambiamos icono para indicar selección
-            self.scheduleButton.setImage(UIImage(systemName: "calendar"), for: .normal)
-        }))
-        present(alert, animated: true)
+        let nav = UINavigationController(rootViewController: dtVC)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
     }
 
     @objc private func saveTask() {
@@ -105,24 +99,24 @@ class AddTaskSheetViewController: UIViewController {
         let descText = descriptionVisible ? descriptionTextView.text : nil
 
         // Aquí llamas a tu ViewModel/Repository (inyección en AppCoordinator)
-        // TaskViewModel.shared.add(title: title, description: descText, listId: listId, deadline: selectedDate)
+        //TaskViewModel.shared.add(title: title, description: descText, listId: listId, deadline: selectedDate)
 
         dismiss(animated: true)
     }
 
     // MARK: - Keyboard Handling
 
-    @objc private func keyboardWillShow(notification: Notification) {
-        guard let frame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
-        // Movemos el contenido hacia arriba para que la sheet quede siempre visible
-        view.transform = CGAffineTransform(translationX: 0, y: -frame.height + view.safeAreaInsets.bottom)
-    }
-
-    @objc private func keyboardWillHide(notification: Notification) {
-        UIView.animate(withDuration: 0.3) {
-            self.view.transform = .identity
-        }
-    }
+//    @objc private func keyboardWillShow(notification: Notification) {
+//        guard let frame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
+//        // Movemos el contenido hacia arriba para que la sheet quede siempre visible
+//        view.transform = CGAffineTransform(translationX: 0, y: -frame.height + view.safeAreaInsets.bottom)
+//    }
+//
+//    @objc private func keyboardWillHide(notification: Notification) {
+//        UIView.animate(withDuration: 0.3) {
+//            self.view.transform = .identity
+//        }
+//    }
 
     // MARK: - Lista Picker Helpers
 

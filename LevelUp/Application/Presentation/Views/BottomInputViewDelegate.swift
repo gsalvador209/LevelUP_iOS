@@ -1,3 +1,11 @@
+//
+//  BottomInputViewDelegate.swift
+//  LevelUp
+//
+//  Created by Salvador Chavez on 25/06/25.
+//
+
+
 import UIKit
 
 protocol BottomInputViewDelegate: AnyObject {
