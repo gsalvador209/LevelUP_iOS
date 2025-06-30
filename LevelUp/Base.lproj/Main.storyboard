@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,11 +13,10 @@
             <objects>
                 <tabBarController id="j0U-f6-FmN" customClass="LevelUpTabBarController" customModule="LevelUp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="l6K-Hh-pH9"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z6U-zq-nDk">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="z6U-zq-nDk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="colorPrimary"/>
                     </tabBar>
                     <connections>
                         <segue destination="Pdd-sH-0Hv" kind="relationship" relationship="viewControllers" id="KlK-9B-KDw"/>
@@ -36,12 +34,12 @@
             <objects>
                 <viewController title="Calendar" id="dhZ-6Y-VVv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I5g-vc-eH6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="goh-4g-QiK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="cqb-2Q-tAm"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" selectedImage="calendar" id="cqb-2Q-tAm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvp-iQ-2Xr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,18 +50,12 @@
             <objects>
                 <viewController title="Tasks" id="Wbe-A2-imZ" customClass="TaskListViewController" customModule="LevelUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pC5-O4-hPS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vI1-no-FJG">
                                 <rect key="frame" x="16" y="118" width="361" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1Yb-cI-3Ie">
-                                    <rect key="frame" x="0.0" y="121.66666793823242" width="361" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskCell" id="drX-wg-KG9" customClass="TaskCell">
                                         <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
@@ -97,7 +89,7 @@
                             <constraint firstItem="vI1-no-FJG" firstAttribute="trailing" secondItem="pC5-O4-hPS" secondAttribute="trailingMargin" id="rB4-Di-q9w"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tasks" image="checkmark.circle" catalog="system" id="Ll0-FG-5vW"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="checkmark.circle" catalog="system" selectedImage="checkmark.circle.fill" id="Ll0-FG-5vW"/>
                     <connections>
                         <outlet property="tableView" destination="vI1-no-FJG" id="hgR-Jn-Hcg"/>
                     </connections>
@@ -111,12 +103,12 @@
             <objects>
                 <viewController title="Stats" id="7Sf-iO-XKe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IEV-eX-56h">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="IE3-xH-ePx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" image="chart.bar" catalog="system" id="v77-yo-Pms"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="chart.bar" catalog="system" selectedImage="chart.bar.fill" id="v77-yo-Pms"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06Q-Yv-Kaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,12 +119,12 @@
             <objects>
                 <viewController title="Space" id="Pdd-sH-0Hv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBJ-0O-AUS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hmA-sT-8Ev"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Space" image="fireplace" catalog="system" id="FHI-nm-lO1"/>
+                    <tabBarItem key="tabBarItem" title="Space" image="fireplace" catalog="system" selectedImage="fireplace.fill" id="FHI-nm-lO1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bp-ov-rv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,11 +134,11 @@
     <resources>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="chart.bar" catalog="system" width="128" height="89"/>
+        <image name="chart.bar.fill" catalog="system" width="128" height="90"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="fireplace" catalog="system" width="128" height="103"/>
-        <namedColor name="colorPrimary">
-            <color red="0.80800002813339233" green="0.59200000762939453" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="fireplace.fill" catalog="system" width="128" height="103"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

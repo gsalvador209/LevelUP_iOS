@@ -16,6 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
         
         let window = UIWindow(windowScene: windowScene)
+        window.backgroundColor = UIColor(named: "colorBackground")
+        window.tintColor      = UIColor(named: "colorPrimary")
+        //window.tintColor = primary
+        
         self.window = window
         
         coordinator = AppCoordinator(window: window)
