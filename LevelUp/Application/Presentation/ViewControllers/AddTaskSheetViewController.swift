@@ -54,13 +54,13 @@ class AddTaskSheetViewController: UIViewController {
     // MARK: - Ciclo de vida
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UISheetPresentationController.Detent.Identifier("medium")
         //Listas
         listSelectorField.inputView = listPicker
         loadLists()
     
         
-        //Bottom Sheet
+        //Description
         descriptionTextView.isHidden = true
         descriptionHeightConstraint.constant = 0
         saveButton.isEnabled = false
@@ -79,6 +79,7 @@ class AddTaskSheetViewController: UIViewController {
                 placeholderLabel.leadingAnchor.constraint(equalTo: descriptionTextView.leadingAnchor, constant: 5),
                 placeholderLabel.trailingAnchor.constraint(equalTo: descriptionTextView.trailingAnchor, constant: -5)
             ])
+        
     }
 
     deinit {
@@ -92,8 +93,11 @@ class AddTaskSheetViewController: UIViewController {
     }
 
     @objc private func toggleDescription() {
+        
         descriptionVisible.toggle()
         descriptionTextView.isHidden = !descriptionVisible
+        toggleDescriptionButton.tintColor = descriptionVisible ? UIColor(named: "colorSecondary") : UIColor(named: "colorSecondarySoft")
+        
         descriptionHeightConstraint.constant = descriptionVisible ? 50 : 0
         
         if #available(iOS 16, *) {
@@ -180,32 +184,13 @@ class AddTaskSheetViewController: UIViewController {
     }
     
     
-//    
-//    private func selectList(at index: Int) {
-//        let list = lists[index]
-//        selectedList = list[index]
-//    }
-    
-    
-    
 }
 
 // MARK: - UIPickerViewDelegate & DataSource
-
-
 extension AddTaskSheetViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         // Oculta el placeholder si hay texto
         placeholderLabel.isHidden = !textView.text.isEmpty
-    }
-
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        // si quieres mover el detent a grande cuando empiecen a escribir
-        if #available(iOS 16.0, *) {
-            sheetPresentationController?.animateChanges {
-                sheetPresentationController?.selectedDetentIdentifier = .large
-            }
-        }
     }
 }
 

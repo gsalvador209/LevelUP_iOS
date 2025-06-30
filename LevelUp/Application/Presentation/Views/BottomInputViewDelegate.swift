@@ -24,6 +24,8 @@ class BottomInputView: UIView {
   private let saveButton: UIButton = {
     let btn = UIButton(type: .system)
     btn.setTitle("Guardar", for: .normal)
+      //btn.tintColor = UIColor(named: "colorSecondary")
+      
     btn.isEnabled = false
     btn.translatesAutoresizingMaskIntoConstraints = false
     return btn

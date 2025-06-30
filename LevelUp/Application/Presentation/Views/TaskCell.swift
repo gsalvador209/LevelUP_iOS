@@ -11,12 +11,15 @@ import UIKit
 class TaskCell: UITableViewCell {
     static let reuseIdentifier = "TaskCell"
     
+    let uncheckedImage = UIImage(systemName: "square")
+    let checkedImage = UIImage(systemName: "checkmark.square")
     
     // MARK: – Subviews
-    private let completeSwitch: UISwitch = {
-        let sw = UISwitch()
-        sw.translatesAutoresizingMaskIntoConstraints = false
-        return sw
+    private let completionButton: UIButton = {
+        let cb = UIButton()
+        cb.translatesAutoresizingMaskIntoConstraints = false
+        //cb.contentEdgeInsets = .zero
+        return cb
     }()
     
     private let titleLabel: UILabel = {
@@ -57,12 +60,12 @@ class TaskCell: UITableViewCell {
         super.prepareForReuse()
         // Limpiar chips previos
         chipsStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
-        completeSwitch.removeTarget(nil, action: nil, for: .allEvents)
+        completionButton.removeTarget(nil, action: nil, for: .allEvents)
     }
     
     // MARK: – Setup UI
     private func setupSubviews() {
-        contentView.addSubview(completeSwitch)
+        contentView.addSubview(completionButton)
         contentView.addSubview(titleLabel)
         contentView.addSubview(descriptionLabel)
         contentView.addSubview(chipsStackView)
@@ -70,12 +73,18 @@ class TaskCell: UITableViewCell {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            // Switch
-            completeSwitch.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
-            completeSwitch.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
+            //CompletionButton
+           completionButton.leadingAnchor
+               .constraint(equalTo: contentView.leadingAnchor, constant: 14),
+           
+           completionButton.widthAnchor.constraint(equalToConstant: 26),
+           completionButton.heightAnchor.constraint(equalToConstant: 26),
+           
+           completionButton.centerYAnchor
+               .constraint(equalTo: titleLabel.centerYAnchor),
             
             // Title
-            titleLabel.leadingAnchor.constraint(equalTo: completeSwitch.trailingAnchor, constant: 12),
+            titleLabel.leadingAnchor.constraint(equalTo: completionButton.trailingAnchor, constant: 12),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
             
@@ -90,6 +99,10 @@ class TaskCell: UITableViewCell {
             chipsStackView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 8),
             chipsStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12)
         ])
+        
+        //Forzar el horizontal del boton
+        completionButton.setContentHuggingPriority(.required, for: .horizontal)
+        completionButton.setContentCompressionResistancePriority(.required, for: .horizontal)
     }
     
     // MARK: – Configuración pública
@@ -100,18 +113,24 @@ class TaskCell: UITableViewCell {
     ) {
         //Titulo y desc
         let isDone = task.isCompleted
+        
         titleLabel.attributedText = NSAttributedString(
             string: task.title!,
             attributes: isDone
             ? [.strikethroughStyle: NSUnderlineStyle.single.rawValue]
             : [:]
         )
-        completeSwitch.isOn = isDone
+        
+        let image = isDone
+        ? checkedImage
+        : uncheckedImage
+        completionButton.setBackgroundImage(image, for: .normal)
+        
         
         //Accion del swicth
-        completeSwitch.addAction(
+        completionButton.addAction(
             UIAction{ _ in onCompletionToggled(task.id!) },
-            for: .valueChanged)
+            for: .touchUpInside)
         
         //Limpieza de chips
         chipsStackView.arrangedSubviews.forEach{ $0.removeFromSuperview()}

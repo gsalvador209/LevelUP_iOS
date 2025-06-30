@@ -35,6 +35,7 @@ class LevelUpTabBarController: UITabBarController {
     
     private func setupAddButton() {
         
+        addButton.backgroundColor = UIColor(named: "colorSecondary")
             view.addSubview(addButton)
 
         
@@ -50,6 +51,8 @@ class LevelUpTabBarController: UITabBarController {
             
             addButton.addTarget(self, action: #selector(didTapAdd), for: .touchUpInside)
         }
+    
+
     
     @objc private func didTapAdd() {
             let sb = UIStoryboard(name: "AddTaskSheet", bundle: nil)
