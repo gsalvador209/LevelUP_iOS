@@ -8,8 +8,14 @@
 
 import UIKit
 import CoreData
+import Combine
 
 class LevelUpTabBarController: UITabBarController {
+    
+    private let topBar = TopBarView()
+    private let viewModel = ProfileViewModel()
+    private var cancellables = Set<AnyCancellable>()
+
     
     //Boton para anãdir tareas
     private let addButton: UIButton = {
@@ -31,6 +37,8 @@ class LevelUpTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAddButton()
+        setupTopBar()
+        bindProfile()
     }
     
     private func setupAddButton() {
@@ -51,7 +59,49 @@ class LevelUpTabBarController: UITabBarController {
             
             addButton.addTarget(self, action: #selector(didTapAdd), for: .touchUpInside)
         }
+
     
+    private func setupTopBar() {
+        topBar.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(topBar)
+
+        NSLayoutConstraint.activate([
+            topBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            topBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            topBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            topBar.heightAnchor.constraint(equalToConstant: 56)
+        ])
+
+
+        // Tocar avatar → ir a perfil
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapProfile))
+        topBar.avatarImageView.addGestureRecognizer(tap)
+    }
+
+    private func bindProfile() {
+        viewModel.$goldCoins
+            .combineLatest(viewModel.$silverCoins, viewModel.$avatarUri)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] gold, silver, uri in
+                self?.topBar.configure(
+                    title: "LevelUp",
+                    gold: gold,
+                    silver: silver,
+                    avatarURL: uri
+                )
+            }.store(in: &cancellables)
+    }
+    
+    func updateToolbarTitle(_ title: String) {
+        topBar.titleLabel.text = title
+    }
+
+
+    @objc private func didTapProfile() {
+        let profileVC = ProfileViewController()
+        navigationController?.pushViewController(profileVC, animated: true)
+    }
+
 
     
     @objc private func didTapAdd() {
@@ -78,9 +128,19 @@ class LevelUpTabBarController: UITabBarController {
         }
     
     // Para hacer que el boton sea flotante y esté arriba de todo
-        override func viewDidLayoutSubviews() {
-            super.viewDidLayoutSubviews()
-            view.bringSubviewToFront(addButton)
-        }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        view.bringSubviewToFront(topBar)
+        view.bringSubviewToFront(addButton)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
 
 }
