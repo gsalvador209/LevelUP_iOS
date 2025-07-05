@@ -2,7 +2,7 @@
 //  TaskEntity+CoreDataProperties.swift
 //  LevelUp
 //
-//  Created by Salvador Chavez on 23/06/25.
+//  Created by Salvador Chavez on 04/07/25.
 //
 //
 
@@ -27,8 +27,8 @@ extension TaskEntity {
     @NSManaged public var taskDescription: String?
     @NSManaged public var title: String?
     @NSManaged public var updatedAt: Date?
-    @NSManaged public var list: ListEntity?
     @NSManaged public var completions: TaskCompletionEntity?
+    @NSManaged public var list: ListEntity?
     @NSManaged public var recurrenceRule: RecurrenceRuleEntity?
 
 }

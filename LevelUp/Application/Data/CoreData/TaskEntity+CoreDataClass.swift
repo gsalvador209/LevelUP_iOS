@@ -2,14 +2,14 @@
 //  TaskEntity+CoreDataClass.swift
 //  LevelUp
 //
-//  Created by Salvador Chavez on 23/06/25.
+//  Created by Salvador Chavez on 04/07/25.
 //
 //
 
 import Foundation
 import CoreData
 
-@objc(TaskEntity)
+
 public class TaskEntity: NSManagedObject {
 
 }
