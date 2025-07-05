@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Target 'LevelUp' in project 'LevelUp'
+➜ Explicit dependency on target 'KVKCalendar' in project 'KVKCalendar'
+Target 'KVKCalendar' in project 'KVKCalendar'
+➜ Explicit dependency on target 'KVKCalendar' in project 'KVKCalendar'
+Target 'KVKCalendar' in project 'KVKCalendar' (no dependencies)

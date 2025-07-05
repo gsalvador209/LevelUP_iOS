@@ -1,0 +1,24 @@
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/OwnedSticker+CoreDataProperties.swift":
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.dia"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.swiftconstvalues"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.o"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.d"
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/OwnedSticker+CoreDataClass.swift":
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.d"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.swiftconstvalues"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.dia"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.o"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.swiftdeps"
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/Views/TaskCell.swift":
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.swiftconstvalues"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.o"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.d"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.dia"
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/Product+CoreDataClass.swift":
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.o"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.dia"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.d"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.swiftconstvalues"

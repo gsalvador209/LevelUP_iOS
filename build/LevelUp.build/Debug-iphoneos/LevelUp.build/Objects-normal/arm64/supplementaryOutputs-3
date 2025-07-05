@@ -1,0 +1,24 @@
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Data/Repositories/TaskRepository.swift":
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.dia"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.swiftconstvalues"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.d"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.o"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.swiftdeps"
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewModels/TaskListViewModel.swift":
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.dia"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.swiftconstvalues"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.o"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.d"
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/Views/BottomInputViewDelegate.swift":
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.d"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.o"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.swiftconstvalues"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.dia"
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/ViewController.swift":
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.dia"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.swiftconstvalues"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.d"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.o"

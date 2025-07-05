@@ -1,0 +1,18 @@
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/GeneratedAssetSymbols.swift":
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.dia"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.d"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues"
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/UserEntity+CoreDataProperties.swift":
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.dia"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.o"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.d"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.swiftconstvalues"
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/LevelUpDatabase+CoreDataModel.swift":
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.d"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.swiftconstvalues"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.dia"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.o"

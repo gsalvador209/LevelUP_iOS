@@ -1,0 +1,24 @@
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Data/CoreDataStack.swift":
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.dia"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.o"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.swiftconstvalues"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.swiftdeps"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.d"
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewControllers/AddTaskSheetViewController.swift":
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.d"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.dia"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.swiftconstvalues"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.o"
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/Views/TaskCell.swift":
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.swiftconstvalues"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.o"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.dia"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.d"
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Utilities/Date+WeekBounds.swift":
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.swiftconstvalues"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.dia"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.o"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.d"

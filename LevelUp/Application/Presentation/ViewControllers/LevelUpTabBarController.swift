@@ -13,7 +13,7 @@ import Combine
 class LevelUpTabBarController: UITabBarController {
     
     private let topBar = TopBarView()
-    private let viewModel = ProfileViewModel()
+    private let viewModel = ProfileViewModel.shared
     private var cancellables = Set<AnyCancellable>()
 
     

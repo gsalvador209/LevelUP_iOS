@@ -1,0 +1,24 @@
+"/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/AppCoordinator.swift":
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.swiftconstvalues"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.dia"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.d"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.swiftdeps"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.o"
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/OwnedSticker+CoreDataProperties.swift":
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.o"
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.d"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.swiftconstvalues"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.dia"
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/OwnedSticker+CoreDataClass.swift":
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.d"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.dia"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.swiftdeps"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.swiftconstvalues"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.o"
+"/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/Product+CoreDataClass.swift":
+  dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.d"
+  swift-dependencies: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.swiftdeps"
+  const-values: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.swiftconstvalues"
+  object: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.o"
+  diagnostics: "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.dia"

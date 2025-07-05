@@ -1,0 +1,318 @@
+{
+  "" : {
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUp-master.dia",
+    "emit-module-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUp-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUp-master-emit-module.dia",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUp-master.swiftdeps"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/AppDelegate.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/AppCoordinator.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AppCoordinator~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Data/CoreDataStack.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CoreDataStack~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Data/Repositories/ListRepository.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ListRepository~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Data/Repositories/TaskRepository.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskRepository~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewControllers/AddTaskSheetViewController.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/AddTaskSheetViewController~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewControllers/CalendarViewController.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewController~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewControllers/DateTimePickerViewController.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/DateTimePickerViewController~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewControllers/LevelUpTabBarController.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpTabBarController~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewControllers/ProfileViewController.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewController~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewControllers/TaskListViewController.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewController~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewModels/CalendarViewModel.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/CalendarViewModel~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewModels/ProfileViewModel.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ProfileViewModel~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/ViewModels/TaskListViewModel.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskListViewModel~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/Views/BottomInputViewDelegate.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/BottomInputViewDelegate~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Presentation/Views/TaskCell.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/TaskCell~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Utilities/Date+WeekBounds.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Date+WeekBounds~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Utilities/UIColor+Palette.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIColor+Palette~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/Application/Utilities/UIImageView+Extensions.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UIImageView+Extensions~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/SceneDelegate.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/SceneDelegate~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/LevelUp/ViewController.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/ViewController~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/LevelUpDatabase+CoreDataModel.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/LevelUpDatabase+CoreDataModel~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/OwnedSticker+CoreDataClass.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/OwnedSticker+CoreDataProperties.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/OwnedSticker+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/Product+CoreDataClass.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/Product+CoreDataProperties.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Product+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/Space+CoreDataClass.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/Space+CoreDataProperties.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/Space+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/UserEntity+CoreDataClass.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/CoreDataGenerated/LevelUpDatabase/UserEntity+CoreDataProperties.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/UserEntity+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/chava/Documents/LevelUP_iOS/build/LevelUp.build/Debug-iphoneos/LevelUp.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

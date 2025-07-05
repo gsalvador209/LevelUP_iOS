@@ -9,11 +9,28 @@
         <attribute name="type" optional="YES" attributeType="String"/>
         <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="list" inverseEntity="Task"/>
     </entity>
+    <entity name="OwnedSticker" representedClassName=".OwnedSticker" syncable="YES">
+        <attribute name="productId" optional="YES" attributeType="String"/>
+        <attribute name="purchasedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="userId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Product" representedClassName=".Product" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="imageUri" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="RecurrenceRule" representedClassName=".RecurrenceRuleEntity" syncable="YES">
         <attribute name="rrule" optional="YES" attributeType="String"/>
         <attribute name="ststartUtc" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="taskId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="recurrenceRule" inverseEntity="Task"/>
+    </entity>
+    <entity name="Space" representedClassName=".Space" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Task" representedClassName=".TaskEntity" syncable="YES">
         <attribute name="completedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -36,5 +53,13 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="taskId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="completions" inverseEntity="Task"/>
+    </entity>
+    <entity name="UserEntity" representedClassName=".UserEntity" syncable="YES">
+        <attribute name="avatarUri" optional="YES" attributeType="String"/>
+        <attribute name="goldCoins" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="registrationDate" optional="YES" attributeType="String"/>
+        <attribute name="silverCoins" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
 </model>

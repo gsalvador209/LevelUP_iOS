@@ -1,0 +1,145 @@
+LevelUP_iOS/
+├── LevelUp
+│   ├── AppDelegate.swift
+│   ├── Application
+│   │   ├── AppCoordinator.swift
+│   │   ├── Data
+│   │   │   ├── CoreData
+│   │   │   │   ├── LevelUpDatabase.xcdatamodeld
+│   │   │   │   │   └── LevelUpDatabase.xcdatamodel
+│   │   │   │   │       └── contents
+│   │   │   │   ├── ListEntity+CoreDataClass.swift
+│   │   │   │   ├── RecurrenceRuleEntity+CoreDataClass.swift
+│   │   │   │   ├── TaskCompletionEntity+CoreDataClass.swift
+│   │   │   │   └── TaskEntity+CoreDataClass.swift
+│   │   │   ├── CoreDataProperties
+│   │   │   │   ├── ListEntity+CoreDataProperties.swift
+│   │   │   │   ├── RecurrenceRuleEntity+CoreDataProperties.swift
+│   │   │   │   ├── TaskCompletionEntity+CoreDataProperties.swift
+│   │   │   │   └── TaskEntity+CoreDataProperties.swift
+│   │   │   ├── CoreDataStack.swift
+│   │   │   └── Repositories
+│   │   │       └── ListRepository.swift
+│   │   ├── Presentation
+│   │   │   ├── Storyboards
+│   │   │   │   └── AddTaskSheet.storyboard
+│   │   │   ├── ViewControllers
+│   │   │   │   ├── AddTaskSheetViewController.swift
+│   │   │   │   ├── CalendarViewController.swift
+│   │   │   │   ├── DateTimePickerViewController.swift
+│   │   │   │   ├── LevelUpTabBarController.swift
+│   │   │   │   └── TaskListViewController.swift
+│   │   │   ├── ViewModels
+│   │   │   │   ├── CalendarViewModel.swift
+│   │   │   │   └── TaskListViewModel.swift
+│   │   │   └── Views
+│   │   │       ├── BottomInputViewDelegate.swift
+│   │   │       └── TaskCell.swift
+│   │   ├── Resources
+│   │   ├── UI
+│   │   └── Utilities
+│   │       ├── Date+WeekBounds.swift
+│   │       ├── UIColor+Palette.swift
+│   │       └── UIImageView+Extensions.swift
+│   ├── Assets.xcassets
+│   │   ├── AccentColor.colorset
+│   │   │   └── Contents.json
+│   │   ├── AppIcon.appiconset
+│   │   │   └── Contents.json
+│   │   ├── Contents.json
+│   │   ├── LevelUp_icon_transparent.imageset
+│   │   │   └── Contents.json
+│   │   ├── chip_aqua_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_aqua_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_cielo_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_cielo_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_coral_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_coral_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_grafito_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_grafito_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_hierba_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_hierba_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_lavanda_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_lavanda_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_lila_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_lila_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_mandarina_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_mandarina_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_miel_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_miel_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_rosado_pastel.colorset
+│   │   │   └── Contents.json
+│   │   ├── chip_rosado_strong.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorBackground.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorError.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorOnBackground.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorOnPrimary.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorOnSecondary.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorOnSurface.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorPrimary.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorPrimaryVariant.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorSecondary.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorSecondarySoft.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorSecondaryVariant.colorset
+│   │   │   └── Contents.json
+│   │   ├── colorSurface.colorset
+│   │   │   └── Contents.json
+│   │   └── hint_text_color.colorset
+│   │       └── Contents.json
+│   ├── Base.lproj
+│   │   ├── LaunchScreen.storyboard
+│   │   └── Main.storyboard
+│   ├── Info.plist
+│   ├── SceneDelegate.swift
+│   └── ViewController.swift
+├── LevelUp.xcodeproj
+│   ├── project.pbxproj
+│   ├── project.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   ├── xcshareddata
+│   │   │   ├── WorkspaceSettings.xcsettings
+│   │   │   └── swiftpm
+│   │   │       ├── Package.resolved
+│   │   │       └── configuration
+│   │   └── xcuserdata
+│   │       └── chava.xcuserdatad
+│   │           ├── IDEFindNavigatorScopes.plist
+│   │           └── WorkspaceSettings.xcsettings
+│   └── xcuserdata
+│       └── chava.xcuserdatad
+│           ├── xcdebugger
+│           │   └── Breakpoints_v2.xcbkptlist
+│           └── xcschemes
+│               └── xcschememanagement.plist
+├── README.md
+├── directory_structure.txt
+└── mole.py
