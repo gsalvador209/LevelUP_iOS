@@ -10,6 +10,9 @@ import UIKit
 
 // Ruta: LevelUp/Application/Presentation/Views/DraggableStickerView.swift
 class DraggableStickerView: UIImageView, UIGestureRecognizerDelegate {
+    
+    var imageUrl: String?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupGestures()
@@ -28,7 +31,7 @@ class DraggableStickerView: UIImageView, UIGestureRecognizerDelegate {
         let rotate = UIRotationGestureRecognizer(target: self, action: #selector(handleRotate(_:)))
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap))
         doubleTap.numberOfTapsRequired = 2
-
+        contentMode = .scaleAspectFit
         pan.delegate = self
         pinch.delegate = self
         rotate.delegate = self

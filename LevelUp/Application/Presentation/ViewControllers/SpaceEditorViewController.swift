@@ -30,10 +30,16 @@ class SpaceEditorViewController: UIViewController {
         btnAddSticker.translatesAutoresizingMaskIntoConstraints = false
         //btnAddSticker.setTitle("Añadir sticker", for: .normal)
         btnAddSticker.setImage(UIImage(systemName: "star.square"), for: .normal)
+        btnAddSticker.tintColor = .white
         btnAddSticker.backgroundColor = UIColor(named: "colorPrimary") ?? .systemBlue
-        btnAddSticker.setTitleColor(.white, for: .normal)
         btnAddSticker.layer.cornerRadius = 28
-        btnAddSticker.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        btnAddSticker.clipsToBounds = true
+        
+        btnAddSticker.setTitle(nil, for: .normal)
+        btnAddSticker.setTitleColor(nil, for: .normal)
+        btnAddSticker.titleLabel?.font = nil
+        
+        
         btnAddSticker.addTarget(self, action: #selector(showStickerPicker), for: .touchUpInside)
         view.addSubview(btnAddSticker)
 
@@ -43,7 +49,7 @@ class SpaceEditorViewController: UIViewController {
             fondoImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             fondoImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
 
-            btnAddSticker.widthAnchor.constraint(equalToConstant: 200),
+            btnAddSticker.widthAnchor.constraint(equalToConstant: 56),
             btnAddSticker.heightAnchor.constraint(equalToConstant: 56),
             btnAddSticker.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             btnAddSticker.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40)
@@ -71,6 +77,7 @@ class SpaceEditorViewController: UIViewController {
         let stickerView = DraggableStickerView(frame: CGRect(x: 100, y: 100, width: 120, height: 120))
         if let url = sticker.imageUri, let imgUrl = URL(string: url) {
             stickerView.loadImage(from: imgUrl)
+            stickerView.imageUrl = sticker.imageUri
         }
         stickerViews.append(stickerView)
         fondoImageView.addSubview(stickerView)
@@ -91,7 +98,7 @@ extension SpaceEditorViewController {
                 centerY: sticker.center.y,
                 scale: scale,
                 rotation: rotation,
-                imageUrl: sticker.image?.accessibilityIdentifier ?? "" // usa sticker.stickerId o sticker.imageUrl real
+                imageUrl: sticker.imageUrl ?? "" // usa sticker.stickerId o sticker.imageUrl real
             )
             states.append(state)
         }
@@ -109,6 +116,7 @@ extension SpaceEditorViewController {
 
         for state in states {
             let stickerView = DraggableStickerView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+            stickerView.imageUrl = state.imageUrl
             // Carga la imagen:
             if let url = URL(string: state.imageUrl) {
                 stickerView.loadImage(from: url)
