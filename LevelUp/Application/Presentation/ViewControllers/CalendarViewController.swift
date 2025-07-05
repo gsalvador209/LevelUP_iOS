@@ -25,7 +25,8 @@ class CalendarViewController: UIViewController {
 
   private var cancellables = Set<AnyCancellable>()
   private var events: [Event] = []
-
+    private var currentVisibleDate: Date = Date()
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     setupCalendar()
@@ -36,16 +37,17 @@ class CalendarViewController: UIViewController {
     private func setupCalendar() {
         // 1) Configura el estilo
         var style = Style()
+    
         style.defaultType  = .week
         style.startWeekDay = .monday
     
-
         // 2) Instancia el calendario con el frame inicial igual al del contenedor
         let cal = KVKCalendarView(frame: calendarContainer.bounds,
                                   style: style)
         cal.dataSource = self
         cal.delegate   = self
 
+        
         // 3) Activa autoresizing para que se redimensione con el contenedor
         cal.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
@@ -75,6 +77,13 @@ class CalendarViewController: UIViewController {
           }
           .store(in: &cancellables)
       }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      // Usa la fecha actualmente visible del calendario, o Date() si no existe la propiedad
+      viewModel.fetchEvents(forWeekContaining: currentVisibleDate)
+    }
+
 }
 
 // MARK: – CalendarDataSource
@@ -116,5 +125,11 @@ func didSelectDate(_ date: Date, type: CalendarType, frame: CGRect?) {
     viewModel.startEditingTask(id: event.ID)
   }
     
+func didScrollToDate(_ date: Date, type: CalendarType) {
+    currentVisibleDate = date
+    viewModel.fetchEvents(forWeekContaining: date)
+  }
    
 }
+
+
