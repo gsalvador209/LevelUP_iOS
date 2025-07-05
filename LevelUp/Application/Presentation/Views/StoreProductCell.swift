@@ -12,7 +12,7 @@ class StoreProductCell: UICollectionViewCell {
     let imageView = UIImageView()
     let nameLabel = UILabel()
     let priceLabel = UILabel()
-    let buyButton = UIButton(type: .system)
+    let buyButton = UIButton(type: .custom)
     var buyButtonAction: (() -> Void)?
 
     override init(frame: CGRect) {
@@ -25,8 +25,8 @@ class StoreProductCell: UICollectionViewCell {
 
     private func setupUI() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFit
+        imageView.clipsToBounds = false
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
         buyButton.translatesAutoresizingMaskIntoConstraints = false
@@ -71,7 +71,15 @@ class StoreProductCell: UICollectionViewCell {
         nameLabel.text = product.title
         priceLabel.text = "🥇 \(product.price)"
         buyButton.isEnabled = !purchased
-        buyButton.setTitle(purchased ? "Comprado" : "Comprar", for: .normal)
+        if purchased {
+            buyButton.setTitle("Comprado", for: .normal)
+            buyButton.backgroundColor = .systemGray4   // o .lightGray, como prefieras
+            buyButton.setTitleColor(.darkGray, for: .normal)
+        } else {
+            buyButton.setTitle("Comprar", for: .normal)
+            buyButton.backgroundColor = UIColor(named: "colorPrimary") ?? .systemBlue
+            buyButton.setTitleColor(.white, for: .normal)
+        }
         if let imageUrl = product.imageUri, let url = URL(string: imageUrl) {
             imageView.loadImage(from: url)
         } else {

@@ -37,7 +37,7 @@ class StoreViewController: UIViewController, UICollectionViewDelegate, UICollect
     // MARK: - API fetch
     private func fetchProductsFromAPI() {
         // 🔥 Usa tu endpoint real aquí:
-        guard let url = URL(string: "https://tu-endpoint-de-apiary.com/products") else { return }
+        guard let url = URL(string: "https://private-bb8f6f-stickers5.apiary-mock.com/stickers/all_stickers") else { return }
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data,
                   let products = try? JSONDecoder().decode([ProductDTO].self, from: data) else {
@@ -117,7 +117,8 @@ class StoreViewController: UIViewController, UICollectionViewDelegate, UICollect
         try? context.save()
         // Refresca la lista
         fetchPurchasedProducts()
-        showAlert("¡Comprado!")
+        reloadProducts()
+        //showAlert("¡Comprado!")
     }
     
     private func showAlert(_ msg: String) {
