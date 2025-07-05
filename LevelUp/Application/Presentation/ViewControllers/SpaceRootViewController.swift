@@ -48,7 +48,7 @@ class SpaceRootViewController: UIViewController {
     }
 
     @objc private func openEditor() {
-        //let editorVC = SpaceEditorViewController()
-        //navigationController?.pushViewController(editorVC, animated: true)
+        let editorVC = SpaceEditorViewController()
+        navigationController?.pushViewController(editorVC, animated: true)
     }
 }

@@ -32,7 +32,7 @@
         <!--Calendar-->
         <scene sceneID="g1Z-Mm-NuL">
             <objects>
-                <viewController title="Calendar" id="dhZ-6Y-VVv" sceneMemberID="viewController">
+                <viewController title="Calendar" id="dhZ-6Y-VVv" customClass="CalendarViewController" customModule="LevelUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I5g-vc-eH6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
                         <viewLayoutGuide key="safeArea" id="hmA-sT-8Ev"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Space" image="fireplace" catalog="system" selectedImage="fireplace.fill" id="FHI-nm-lO1"/>
+                    <tabBarItem key="tabBarItem" title="Space" image="leaf.circle" catalog="system" selectedImage="leaf.circle.fill" id="FHI-nm-lO1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bp-ov-rv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,8 +137,8 @@
         <image name="chart.bar.fill" catalog="system" width="128" height="90"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="fireplace" catalog="system" width="128" height="103"/>
-        <image name="fireplace.fill" catalog="system" width="128" height="103"/>
+        <image name="leaf.circle" catalog="system" width="128" height="123"/>
+        <image name="leaf.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
