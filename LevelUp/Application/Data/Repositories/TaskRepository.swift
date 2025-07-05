@@ -85,6 +85,13 @@ final class TaskRepository {
         req.sortDescriptors = [NSSortDescriptor(key: "deadline", ascending: true)]
         return try context.fetch(req)
     }
+    
+    func fetchTasks(from start: Date, to end: Date) throws -> [TaskEntity] {
+        let req: NSFetchRequest<TaskEntity> = TaskEntity.fetchRequest()
+        req.predicate = NSPredicate(format: "deadline >= %@ AND deadline <= %@", start as CVarArg, end as CVarArg)
+        req.sortDescriptors = [NSSortDescriptor(key: "deadline", ascending: true)]
+        return try context.fetch(req)
+    }
 
     // MARK: - Update
 

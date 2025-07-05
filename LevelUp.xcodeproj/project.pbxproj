@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68EC15212E0DC69B0039DF8F /* LevelUpDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68EC151F2E0DC69B0039DF8F /* LevelUpDatabase.xcdatamodeld */; };
+		68271CED2E18D50600AB75F3 /* KVKCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 68271CEC2E18D50600AB75F3 /* KVKCalendar */; };
+		68943B122E18D16800DBFA45 /* LevelUpDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68EC151F2E0DC69B0039DF8F /* LevelUpDatabase.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68271CED2E18D50600AB75F3 /* KVKCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			);
 			name = LevelUp;
 			packageProductDependencies = (
+				68271CEC2E18D50600AB75F3 /* KVKCalendar */,
 			);
 			productName = LevelUp;
 			productReference = 680AB25F2D9B453500060F39 /* LevelUp.app */;
@@ -113,6 +116,9 @@
 			);
 			mainGroup = 680AB2562D9B453500060F39;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				68271CEB2E18D50600AB75F3 /* XCRemoteSwiftPackageReference "KVKCalendar" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 680AB2602D9B453500060F39 /* Products */;
 			projectDirPath = "";
@@ -138,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68EC15212E0DC69B0039DF8F /* LevelUpDatabase.xcdatamodeld in Sources */,
+				68943B122E18D16800DBFA45 /* LevelUpDatabase.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68271CEB2E18D50600AB75F3 /* XCRemoteSwiftPackageReference "KVKCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kvyatkovskys/KVKCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.29;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68271CEC2E18D50600AB75F3 /* KVKCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68271CEB2E18D50600AB75F3 /* XCRemoteSwiftPackageReference "KVKCalendar" */;
+			productName = KVKCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		68EC151F2E0DC69B0039DF8F /* LevelUpDatabase.xcdatamodeld */ = {
