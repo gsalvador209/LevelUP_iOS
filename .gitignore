@@ -1,1 +1,70 @@
+# Xcode
 DerivedData/
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+xcshareddata/WorkspaceSettings.xcsettings
+*.xcscmblueprint
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Accesibilidad de Xcode
+*.xccheckout
+
+# Archivos temporales
+*.moved-aside
+*.xcuserstate
+*.xcworkspace
+
+# Archivos de playground
+timeline.xctimeline
+playground.xcworkspace
+
+# Otros
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Archivos de datos personales y secretos
+*.key
+*.pem
+*.mobileprovision
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de log y temporales
+*.log
+*.swp
+*.tmp
+
+# Xcode Preview
+PreviewContent/
+
+# Core Data temp
+*.sqlite*
+*.plist.lock
+*.mom.lock
+
+# Si usas Firebase/GoogleService-Info.plist ponlo solo si lo tienes en local y no quieres subirlo
+# GoogleService-Info.plist
