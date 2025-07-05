@@ -18,13 +18,16 @@ class StatsHeatmapView: UIView {
 
     override func draw(_ rect: CGRect) {
       guard !days.isEmpty else { return }
-      let columns = 53, rows = 7
-      let cellSize = min(bounds.width/CGFloat(columns), bounds.height/CGFloat(rows))
-      let spacing: CGFloat = 2
-
+        // coincide con StatsViewModel: 26 semanas
+        let columns = 26, rows = 7
+        // Queremos que (cellSize * columns) + (spacing * (columns-1)) = bounds.width
+        let spacing: CGFloat = 2
+        let totalSpacing = spacing * CGFloat(columns - 1)
+        let cellSize = (bounds.width - totalSpacing) / CGFloat(columns)
+        
       // calcular ancho total y origen X para alinear a la derecha
-      let totalWidth = CGFloat(columns) * (cellSize + spacing) - spacing
-      let originX = bounds.width - totalWidth
+        let totalWidth = CGFloat(columns) * cellSize + totalSpacing
+        let originX = (bounds.width - totalWidth) / 2   // centrar horizontalmente
 
       for week in 0..<columns {
         for day in 0..<rows {

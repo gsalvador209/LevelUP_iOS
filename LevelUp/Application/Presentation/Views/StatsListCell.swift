@@ -20,6 +20,14 @@ class StatsListCell: UITableViewCell {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         heatmapView.translatesAutoresizingMaskIntoConstraints = false
 
+        let spacing: CGFloat = 2
+        let columns = 26
+        // ancho real del heatmap (contentView.width − márgenes 16+16)
+        let availableWidth = UIScreen.main.bounds.width - 32
+        let totalSpacing = spacing * CGFloat(columns - 1)
+        let cellSize = (availableWidth - totalSpacing) / CGFloat(columns)
+        let heatmapHeight = cellSize * 7 + spacing * CGFloat(7 - 1)
+        
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
@@ -28,7 +36,7 @@ class StatsListCell: UITableViewCell {
             heatmapView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
             heatmapView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             heatmapView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            heatmapView.heightAnchor.constraint(equalToConstant: 48),
+            heatmapView.heightAnchor.constraint(equalToConstant: heatmapHeight),
             heatmapView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12)
         ])
     }
