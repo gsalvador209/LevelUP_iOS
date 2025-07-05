@@ -9,17 +9,25 @@ LevelUP_iOS/
 │   │   │   │   │   └── LevelUpDatabase.xcdatamodel
 │   │   │   │   │       └── contents
 │   │   │   │   ├── ListEntity+CoreDataClass.swift
-│   │   │   │   ├── RecurrenceRuleEntity+CoreDataClass.swift
-│   │   │   │   ├── TaskCompletionEntity+CoreDataClass.swift
-│   │   │   │   └── TaskEntity+CoreDataClass.swift
-│   │   │   ├── CoreDataProperties
 │   │   │   │   ├── ListEntity+CoreDataProperties.swift
+│   │   │   │   ├── OwnedSticker+CoreDataClass.swift
+│   │   │   │   ├── OwnedSticker+CoreDataProperties.swift
+│   │   │   │   ├── Product+CoreDataClass.swift
+│   │   │   │   ├── Product+CoreDataProperties.swift
+│   │   │   │   ├── RecurrenceRuleEntity+CoreDataClass.swift
 │   │   │   │   ├── RecurrenceRuleEntity+CoreDataProperties.swift
+│   │   │   │   ├── Space+CoreDataClass.swift
+│   │   │   │   ├── Space+CoreDataProperties.swift
+│   │   │   │   ├── TaskCompletionEntity+CoreDataClass.swift
 │   │   │   │   ├── TaskCompletionEntity+CoreDataProperties.swift
-│   │   │   │   └── TaskEntity+CoreDataProperties.swift
+│   │   │   │   ├── TaskEntity+CoreDataClass.swift
+│   │   │   │   ├── TaskEntity+CoreDataProperties.swift
+│   │   │   │   ├── UserEntity+CoreDataClass.swift
+│   │   │   │   └── UserEntity+CoreDataProperties.swift
 │   │   │   ├── CoreDataStack.swift
 │   │   │   └── Repositories
-│   │   │       └── ListRepository.swift
+│   │   │       ├── ListRepository.swift
+│   │   │       └── TaskRepository.swift
 │   │   ├── Presentation
 │   │   │   ├── Storyboards
 │   │   │   │   └── AddTaskSheet.storyboard
@@ -28,15 +36,23 @@ LevelUP_iOS/
 │   │   │   │   ├── CalendarViewController.swift
 │   │   │   │   ├── DateTimePickerViewController.swift
 │   │   │   │   ├── LevelUpTabBarController.swift
+│   │   │   │   ├── ProfileViewController.swift
+│   │   │   │   ├── SpaceEditorViewController.swift
+│   │   │   │   ├── SpaceRootViewController.swift
+│   │   │   │   ├── StickerState.swift
+│   │   │   │   ├── StoreViewController.swift
 │   │   │   │   └── TaskListViewController.swift
 │   │   │   ├── ViewModels
 │   │   │   │   ├── CalendarViewModel.swift
+│   │   │   │   ├── ProfileViewModel.swift
 │   │   │   │   └── TaskListViewModel.swift
 │   │   │   └── Views
 │   │   │       ├── BottomInputViewDelegate.swift
-│   │   │       └── TaskCell.swift
-│   │   ├── Resources
-│   │   ├── UI
+│   │   │       ├── DraggableStickerView.swift
+│   │   │       ├── StickerPickerSheet.swift
+│   │   │       ├── StoreProductCell.swift
+│   │   │       ├── TaskCell.swift
+│   │   │       └── TopBarView.swift
 │   │   └── Utilities
 │   │       ├── Date+WeekBounds.swift
 │   │       ├── UIColor+Palette.swift
@@ -113,7 +129,11 @@ LevelUP_iOS/
 │   │   │   └── Contents.json
 │   │   ├── colorSurface.colorset
 │   │   │   └── Contents.json
-│   │   └── hint_text_color.colorset
+│   │   ├── default_user.imageset
+│   │   │   └── Contents.json
+│   │   ├── hint_text_color.colorset
+│   │   │   └── Contents.json
+│   │   └── space_background.imageset
 │   │       └── Contents.json
 │   ├── Base.lproj
 │   │   ├── LaunchScreen.storyboard
@@ -141,5 +161,14 @@ LevelUP_iOS/
 │           └── xcschemes
 │               └── xcschememanagement.plist
 ├── README.md
+├── TempTarget
+│   ├── Assets.xcassets
+│   │   ├── AccentColor.colorset
+│   │   │   └── Contents.json
+│   │   ├── AppIcon.appiconset
+│   │   │   └── Contents.json
+│   │   └── Contents.json
+│   ├── ContentView.swift
+│   └── TempTargetApp.swift
 ├── directory_structure.txt
 └── mole.py
