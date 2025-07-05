@@ -36,6 +36,8 @@ class LevelUpTabBarController: UITabBarController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.selectedIndex = 2
         setupAddButton()
         setupTopBar()
         bindProfile()

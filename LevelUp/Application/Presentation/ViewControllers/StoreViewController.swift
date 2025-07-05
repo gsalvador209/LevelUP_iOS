@@ -3,7 +3,7 @@ import CoreData
 
 class StoreViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    private var products: [ProductEntity] = []
+    private var products: [Product] = []
     private var purchasedProductIds: Set<String> = []
     private let profileVM = ProfileViewModel.shared
 
@@ -55,30 +55,30 @@ class StoreViewController: UIViewController, UICollectionViewDelegate, UICollect
     private func saveProductsToCoreData(products: [ProductDTO]) {
         let context = CoreDataStack.shared.container.viewContext
         for productDTO in products {
-            let fetch: NSFetchRequest<ProductEntity> = ProductEntity.fetchRequest()
+            let fetch: NSFetchRequest<Product> = Product.fetchRequest()
             fetch.predicate = NSPredicate(format: "id == %@", productDTO.id)
             if let found = try? context.fetch(fetch), found.isEmpty == false {
                 continue // Ya existe
             }
-            let entity = ProductEntity(context: context)
+            let entity = Product(context: context)
             entity.id = productDTO.id
-            entity.name = productDTO.name
-            entity.price = Int32(productDTO.price)
-            entity.imageUrl = productDTO.imageUrl
+            entity.title = productDTO.title
+            entity.price = Double(productDTO.price)
+            entity.imageUri = productDTO.imageUrl
         }
         try? context.save()
     }
 
     private func reloadProducts() {
         let context = CoreDataStack.shared.container.viewContext
-        let req: NSFetchRequest<ProductEntity> = ProductEntity.fetchRequest()
+        let req: NSFetchRequest<Product> = Product.fetchRequest()
         products = (try? context.fetch(req)) ?? []
         collectionView.reloadData()
     }
     
     private func fetchPurchasedProducts() {
         let context = CoreDataStack.shared.container.viewContext
-        let req: NSFetchRequest<OwnedStickerEntity> = OwnedStickerEntity.fetchRequest()
+        let req: NSFetchRequest<OwnedSticker> = OwnedSticker.fetchRequest()
         if let owned = try? context.fetch(req) {
             purchasedProductIds = Set(owned.compactMap { $0.productId })
         }
@@ -102,7 +102,7 @@ class StoreViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
 
     // MARK: - Comprar producto
-    private func buyProduct(_ product: ProductEntity) {
+    private func buyProduct(_ product: Product) {
         guard let id = product.id else { return }
         if profileVM.goldCoins < Int(product.price) {
             showAlert("No tienes monedas suficientes")
@@ -112,7 +112,7 @@ class StoreViewController: UIViewController, UICollectionViewDelegate, UICollect
         profileVM.goldCoins -= Int(product.price)
         // Guarda como comprado en CoreData
         let context = CoreDataStack.shared.container.viewContext
-        let owned = OwnedStickerEntity(context: context)
+        let owned = OwnedSticker(context: context)
         owned.productId = id
         try? context.save()
         // Refresca la lista
@@ -130,7 +130,8 @@ class StoreViewController: UIViewController, UICollectionViewDelegate, UICollect
 // MARK: - Models auxiliares solo para el fetch
 struct ProductDTO: Decodable {
     let id: String
-    let name: String
-    let price: Int
+    let title : String
+    let category : String
+    let price: Float
     let imageUrl: String?
 }

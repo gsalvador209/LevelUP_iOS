@@ -117,7 +117,7 @@
         <!--Space-->
         <scene sceneID="eNR-IF-9HK">
             <objects>
-                <viewController title="Space" id="Pdd-sH-0Hv" sceneMemberID="viewController">
+                <viewController title="Space" id="Pdd-sH-0Hv" customClass="SpaceRootViewController" customModule="LevelUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBJ-0O-AUS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="735"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

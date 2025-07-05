@@ -67,12 +67,12 @@ class StoreProductCell: UICollectionViewCell {
         buyButtonAction?()
     }
 
-    func configure(with product: ProductEntity, purchased: Bool) {
-        nameLabel.text = product.name
+    func configure(with product: Product, purchased: Bool) {
+        nameLabel.text = product.title
         priceLabel.text = "🥇 \(product.price)"
         buyButton.isEnabled = !purchased
         buyButton.setTitle(purchased ? "Comprado" : "Comprar", for: .normal)
-        if let imageUrl = product.imageUrl, let url = URL(string: imageUrl) {
+        if let imageUrl = product.imageUri, let url = URL(string: imageUrl) {
             imageView.loadImage(from: url)
         } else {
             imageView.image = UIImage(systemName: "photo")
