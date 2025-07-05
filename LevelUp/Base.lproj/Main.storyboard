@@ -40,6 +40,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" selectedImage="calendar" id="cqb-2Q-tAm"/>
+                    <connections>
+                        <outlet property="calendarContainer" destination="I5g-vc-eH6" id="fc0-Kr-YSa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvp-iQ-2Xr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,8 @@ import Combine
 class LevelUpTabBarController: UITabBarController {
     
     private let topBar = TopBarView()
+    private var topBarTopConstraint : NSLayoutConstraint!
+    
     private let viewModel = ProfileViewModel.shared
     private var cancellables = Set<AnyCancellable>()
 
@@ -36,10 +38,11 @@ class LevelUpTabBarController: UITabBarController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.selectedIndex = 2
-        setupAddButton()
+        
         setupTopBar()
+        //adjustChildInsets()
+        setupAddButton()
         bindProfile()
     }
     
@@ -64,16 +67,22 @@ class LevelUpTabBarController: UITabBarController {
 
     
     private func setupTopBar() {
-        topBar.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(topBar)
+        let height: CGFloat = 100
 
+        view.addSubview(topBar)
+        topBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        topBarTopConstraint = topBar.topAnchor.constraint(equalTo: view.topAnchor)
+        
         NSLayoutConstraint.activate([
-            topBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            topBarTopConstraint,
             topBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             topBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            topBar.heightAnchor.constraint(equalToConstant: 56)
+            topBar.heightAnchor.constraint(equalToConstant: height)
         ])
 
+        view.bringSubviewToFront(topBar)
+        additionalSafeAreaInsets.top = 60
 
         // Tocar avatar → ir a perfil
         let tap = UITapGestureRecognizer(target: self, action: #selector(didTapProfile))
@@ -134,7 +143,19 @@ class LevelUpTabBarController: UITabBarController {
         super.viewDidLayoutSubviews()
         view.bringSubviewToFront(topBar)
         view.bringSubviewToFront(addButton)
+        
+        //let inset = view.safeAreaInsets.top
+        //topBarTopConstraint.constant = inset
+        
     }
+    
+//    private func adjustChildInsets() {
+//            let height: CGFloat = 60
+//            viewControllers?.forEach { vc in
+//                let target = (vc as? UINavigationController)?.topViewController ?? vc
+//                target.additionalSafeAreaInsets.top = height
+//            }
+//        }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
