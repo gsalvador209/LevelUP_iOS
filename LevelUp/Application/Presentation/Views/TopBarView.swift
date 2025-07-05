@@ -80,8 +80,7 @@ final class TopBarView: UIView {
         goldLabel.text   = "🥇 \(gold)"
         silverLabel.text = "🥈 \(silver)"
 
-        if let urlString = avatarURL,
-           let url = URL(string: urlString) {
+        if let avatarURL = avatarURL, let url = URL(string: avatarURL) {
             avatarImageView.loadImage(from: url)
         } else {
             avatarImageView.image = UIImage(named: "default_user")

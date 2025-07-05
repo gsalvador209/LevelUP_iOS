@@ -10,7 +10,7 @@ class ProfileViewController: UIViewController {
     private let goldLabel = UILabel()
     private let silverLabel = UILabel()
 
-    private let viewModel = ProfileViewModel()
+    private let viewModel = ProfileViewModel.shared
     private var cancellables = Set<AnyCancellable>()
 
     override func viewDidLoad() {
@@ -80,12 +80,12 @@ class ProfileViewController: UIViewController {
 
         viewModel.$goldCoins
             .map { "🥇 Oro: \($0)" }
-            .assign(to: \.text!, on: goldLabel)
+            .assign(to: \.text, on: goldLabel)
             .store(in: &cancellables)
 
         viewModel.$silverCoins
             .map { "🥈 Plata: \($0)" }
-            .assign(to: \.text!, on: silverLabel)
+            .assign(to: \.text, on: silverLabel)
             .store(in: &cancellables)
 
         viewModel.$avatarUri
@@ -105,6 +105,16 @@ class ProfileViewController: UIViewController {
         let newName = nameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         if !newName.isEmpty {
             viewModel.saveName(newName)
+        }
+        
+        if let uri = viewModel.avatarUri {
+            viewModel.saveAvatar(uri: uri)
+        }
+
+        if let nav = navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            dismiss(animated: true, completion: nil)
         }
     }
 
